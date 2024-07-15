@@ -1,0 +1,359 @@
+[
+  {
+    "id": "32b7983b-3f26-40ad-a7c9-f091265fe401",
+    "name": "Maurita Schimek",
+    "joiningDate": "1/2/2023",
+    "basicSalary": 3976,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "3ec0c2ba-b2a6-4c5d-89e2-f2dfea8786ce",
+    "name": "Ange Gosenell",
+    "joiningDate": "2/4/2023",
+    "basicSalary": 2303,
+    "allowances": ["House Rent", "Children Education", "Food coupons"],
+    "endOfService": true
+  },
+  {
+    "id": "b4cb0a6d-96e4-4cff-9070-f4a4be4d490d",
+    "name": "James Ivanin",
+    "joiningDate": "5/18/2024",
+    "basicSalary": 4850,
+    "allowances": ["House Rent", "Children Education", "Conveyance"],
+    "endOfService": true
+  },
+  {
+    "id": "86e5b450-e326-4c03-b1c7-b6f04c9b0bba",
+    "name": "Koo McRill",
+    "joiningDate": "3/17/2023",
+    "basicSalary": 2689,
+    "allowances": [
+      "House Rent",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "5c8b8a51-9a38-4c49-9163-60f70815ccb9",
+    "name": "Sherwynd Growden",
+    "joiningDate": "4/13/2023",
+    "basicSalary": 4703,
+    "allowances": ["House Rent", "Children Education", "Conveyance"],
+    "endOfService": false
+  },
+  {
+    "id": "ef845362-581b-4294-993c-01e66a6c13da",
+    "name": "Pansy Hodgin",
+    "joiningDate": "2/23/2023",
+    "basicSalary": 4527,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "2674b368-0dea-447e-ba63-d98ca32f0b20",
+    "name": "Gilly Colmore",
+    "joiningDate": "12/14/2022",
+    "basicSalary": 4095,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "0cd8694a-d376-4589-bbb1-21cd3cd80d32",
+    "name": "Tallulah Stansbury",
+    "joiningDate": "8/26/2023",
+    "basicSalary": 2329,
+    "allowances": [
+      "Helper/Assistant",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "87d95c4e-6231-45f8-b088-24491ef91e49",
+    "name": "Kailey Hanks",
+    "joiningDate": "12/28/2023",
+    "basicSalary": 2063,
+    "allowances": ["Books or periodicals", "Food coupons"],
+    "endOfService": false
+  },
+  {
+    "id": "10e5534b-a449-4b8a-b4b4-d4f9a2278ae4",
+    "name": "Donall Beccera",
+    "joiningDate": "6/13/2024",
+    "basicSalary": 4096,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "56d0dd95-6a68-4772-9cfd-fb5855313c55",
+    "name": "Evy Ingreda",
+    "joiningDate": "4/5/2023",
+    "basicSalary": 4240,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Books or periodicals",
+      "Food coupons"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "0c2e2dec-04a5-4644-b82a-beebcbe8f14e",
+    "name": "Correna Ferrillo",
+    "joiningDate": "1/16/2023",
+    "basicSalary": 3803,
+    "allowances": [
+      "House Rent",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "3528fd73-daf2-4f84-987b-4feaa88cccbd",
+    "name": "Stella Dowling",
+    "joiningDate": "3/13/2024",
+    "basicSalary": 3028,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "595d21ac-073a-4014-ac13-681acc9e8326",
+    "name": "Garold Gittings",
+    "joiningDate": "3/15/2023",
+    "basicSalary": 3771,
+    "allowances": [],
+    "endOfService": false
+  },
+  {
+    "id": "144fee37-731b-48a8-a6b1-039dc16c4429",
+    "name": "Olivier Krysztofiak",
+    "joiningDate": "6/29/2023",
+    "basicSalary": 4110,
+    "allowances": ["House Rent", "Leave Travel Concession or Assistance"],
+    "endOfService": true
+  },
+  {
+    "id": "830dca3f-51bc-4d4c-a52b-7f1fa2306af4",
+    "name": "Zia Niaves",
+    "joiningDate": "10/16/2023",
+    "basicSalary": 2336,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "eae214c4-d3f8-4320-bbe9-bb8269061bff",
+    "name": "Nana Meany",
+    "joiningDate": "5/24/2024",
+    "basicSalary": 2569,
+    "allowances": [],
+    "endOfService": true
+  },
+  {
+    "id": "30ea74e0-30a0-4a6a-8741-dd390414ddb7",
+    "name": "Sara Bonhill",
+    "joiningDate": "2/24/2024",
+    "basicSalary": 4158,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Helper/Assistant",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "9fbdde14-9684-4b61-bf9a-0654ecb9e2ff",
+    "name": "Trixie Kerfut",
+    "joiningDate": "1/27/2023",
+    "basicSalary": 2473,
+    "allowances": [
+      "House Rent",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "cdd6a879-90c7-437f-87d6-af0062b5139c",
+    "name": "Charlena Christopher",
+    "joiningDate": "3/14/2024",
+    "basicSalary": 2097,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Helper/Assistant",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "0ef52290-dc65-47f6-94cd-bd2973cfda64",
+    "name": "Beryle Gobel",
+    "joiningDate": "6/19/2023",
+    "basicSalary": 4238,
+    "allowances": [
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "188fa519-e81c-478c-a157-7299a1d70efc",
+    "name": "Josey Brigstock",
+    "joiningDate": "1/22/2023",
+    "basicSalary": 3541,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "a0320ad2-e5d7-41a2-b870-d792a794f3a3",
+    "name": "Karine Dael",
+    "joiningDate": "2/12/2024",
+    "basicSalary": 3509,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "441342f7-d86f-4b10-bf39-9c6d4d0cc546",
+    "name": "Isabelle Tidgewell",
+    "joiningDate": "5/20/2023",
+    "basicSalary": 4842,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "b211ec8a-32d7-4ccd-8003-cab3c42e5b5b",
+    "name": "Erastus Danilevich",
+    "joiningDate": "3/27/2024",
+    "basicSalary": 2435,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "a4321cfa-ec34-4fd7-b1a7-48b3ac30760b",
+    "name": "Desirae Saich",
+    "joiningDate": "8/9/2023",
+    "basicSalary": 4220,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Helper/Assistant",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "22206881-bed1-4e67-9286-e52ce6e375ee",
+    "name": "Lucais Allabush",
+    "joiningDate": "12/17/2022",
+    "basicSalary": 3029,
+    "allowances": ["Leave Travel Concession or Assistance"],
+    "endOfService": false
+  },
+  {
+    "id": "bc5f8d7b-c3a2-4710-89ad-b08f25c357ed",
+    "name": "Susie Sainz",
+    "joiningDate": "6/9/2024",
+    "basicSalary": 4364,
+    "allowances": [
+      "Helper/Assistant",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  },
+  {
+    "id": "f839b566-a0f9-4110-9651-f87ec1a6623b",
+    "name": "Moritz Cross",
+    "joiningDate": "7/16/2023",
+    "basicSalary": 3418,
+    "allowances": [
+      "House Rent",
+      "Children Education",
+      "Conveyance",
+      "Helper/Assistant",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": false
+  },
+  {
+    "id": "df369c95-720a-48b4-81d1-3d327d2d0efc",
+    "name": "Catha Pyzer",
+    "joiningDate": "2/2/2024",
+    "basicSalary": 2435,
+    "allowances": [
+      "House Rent",
+      "Books or periodicals",
+      "Food coupons",
+      "Leave Travel Concession or Assistance"
+    ],
+    "endOfService": true
+  }
+]

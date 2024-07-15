@@ -11,7 +11,7 @@ type Props = {
   required?: boolean;
 };
 
-const TextField = ({ label, name, type, placeholder, ...props }: Props) => {
+const TextField = ({ label, name, ...props }: Props) => {
   const [field, meta, helpers] = useField(name);
 
   return (
