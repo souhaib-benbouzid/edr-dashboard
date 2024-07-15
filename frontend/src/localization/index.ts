@@ -18,4 +18,7 @@ export const translations = {
   SIGNUP_FULL_NAME_FIELD_LABEL: "Full Name",
   SIGNUP_ALREADY_HAVE_AN_ACCOUNT_LABEL: "Already have an account?",
   SIGNUP_LOGIN_REDIRECT_LABEL: "Sign in",
+  DASHBOARD: "Dashboard",
+  EMPLOYEES: "Employees",
+  SALARIES: "Salaries",
 };
