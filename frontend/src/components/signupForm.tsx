@@ -17,8 +17,11 @@ import {
   validationsSchema,
 } from "@/constants/forms/signupForm";
 import { translations } from "@/localization";
+import { location } from "@/lib/location";
+import { useRouter } from "next/navigation";
 
 export function SignupForm() {
+  const router = useRouter();
   const handleSubmit = (
     values: InitialValues,
     formikHelpers: FormikHelpers<InitialValues>
@@ -28,6 +31,7 @@ export function SignupForm() {
 
     setTimeout(() => {
       formikHelpers.setSubmitting(false);
+      router.push(location.dashboardUrl());
     }, 2000);
   };
   return (
@@ -86,7 +90,7 @@ export function SignupForm() {
               </div>
               <div className="mt-4 text-center text-sm">
                 {translations.SIGNUP_ALREADY_HAVE_AN_ACCOUNT_LABEL}{" "}
-                <Link href="/" className="underline">
+                <Link href={location.loginUrl()} className="underline">
                   {translations.SIGNUP_LOGIN_REDIRECT_LABEL}
                 </Link>
               </div>

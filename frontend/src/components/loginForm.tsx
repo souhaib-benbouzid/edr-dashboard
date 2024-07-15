@@ -13,6 +13,7 @@ import {
   initialValues,
   validationsSchema,
 } from "@/constants/forms/loginForm";
+import { location } from "@/lib/location";
 import { translations } from "@/localization";
 import { Form, Formik, FormikHelpers } from "formik";
 import Link from "next/link";
@@ -29,7 +30,7 @@ export function LoginForm() {
 
     setTimeout(() => {
       formikHelpers.setSubmitting(false);
-      router.push("/dashboard");
+      router.push(location.dashboardUrl());
     }, 2000);
   };
   return (
@@ -72,7 +73,7 @@ export function LoginForm() {
               </Button>
               <div className="mt-4 text-center text-sm">
                 {translations.LOGIN_NEW_USER_LABEL}{" "}
-                <Link href="/signup" className="underline">
+                <Link href={location.signupUrl()} className="underline">
                   {translations.LOGIN_SIGNUP_REDIRECT_LABEL}
                 </Link>
               </div>
