@@ -9,8 +9,7 @@
       "Children Education",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "3ec0c2ba-b2a6-4c5d-89e2-f2dfea8786ce",
@@ -38,16 +37,14 @@
       "Books or periodicals",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "5c8b8a51-9a38-4c49-9163-60f70815ccb9",
     "name": "Sherwynd Growden",
     "joiningDate": "4/13/2023",
     "basicSalary": 4703,
-    "allowances": ["House Rent", "Children Education", "Conveyance"],
-    "endOfService": false
+    "allowances": ["House Rent", "Children Education", "Conveyance"]
   },
   {
     "id": "ef845362-581b-4294-993c-01e66a6c13da",
@@ -59,8 +56,7 @@
       "Children Education",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "2674b368-0dea-447e-ba63-d98ca32f0b20",
@@ -72,8 +68,7 @@
       "Children Education",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "0cd8694a-d376-4589-bbb1-21cd3cd80d32",
@@ -85,16 +80,14 @@
       "Books or periodicals",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "87d95c4e-6231-45f8-b088-24491ef91e49",
     "name": "Kailey Hanks",
     "joiningDate": "12/28/2023",
     "basicSalary": 2063,
-    "allowances": ["Books or periodicals", "Food coupons"],
-    "endOfService": false
+    "allowances": ["Books or periodicals", "Food coupons"]
   },
   {
     "id": "10e5534b-a449-4b8a-b4b4-d4f9a2278ae4",
@@ -105,8 +98,7 @@
       "House Rent",
       "Children Education",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "56d0dd95-6a68-4772-9cfd-fb5855313c55",
@@ -143,16 +135,14 @@
       "House Rent",
       "Children Education",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "595d21ac-073a-4014-ac13-681acc9e8326",
     "name": "Garold Gittings",
     "joiningDate": "3/15/2023",
     "basicSalary": 3771,
-    "allowances": [],
-    "endOfService": false
+    "allowances": []
   },
   {
     "id": "144fee37-731b-48a8-a6b1-039dc16c4429",
@@ -172,8 +162,7 @@
       "Children Education",
 
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "eae214c4-d3f8-4320-bbe9-bb8269061bff",
@@ -196,8 +185,7 @@
       "Books or periodicals",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "9fbdde14-9684-4b61-bf9a-0654ecb9e2ff",
@@ -262,8 +250,7 @@
       "Children Education",
       "Conveyance",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "441342f7-d86f-4b10-bf39-9c6d4d0cc546",
@@ -289,8 +276,7 @@
       "Children Education",
       "Conveyance",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "a4321cfa-ec34-4fd7-b1a7-48b3ac30760b",
@@ -303,16 +289,14 @@
       "Conveyance",
       "Helper/Assistant",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "22206881-bed1-4e67-9286-e52ce6e375ee",
     "name": "Lucais Allabush",
     "joiningDate": "12/17/2022",
     "basicSalary": 3029,
-    "allowances": ["Leave Travel Concession or Assistance"],
-    "endOfService": false
+    "allowances": ["Leave Travel Concession or Assistance"]
   },
   {
     "id": "bc5f8d7b-c3a2-4710-89ad-b08f25c357ed",
@@ -340,8 +324,7 @@
       "Books or periodicals",
       "Food coupons",
       "Leave Travel Concession or Assistance"
-    ],
-    "endOfService": false
+    ]
   },
   {
     "id": "df369c95-720a-48b4-81d1-3d327d2d0efc",

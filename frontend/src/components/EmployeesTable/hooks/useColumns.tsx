@@ -25,31 +25,31 @@ export const useColumns = (): Column[] => {
     {
       field: "id",
       renderHeader: () => {
-        return <>{translations.EMPLOYEES_TABLE_STAFF_ID_FIELD}</>;
+        return <div>{translations.EMPLOYEES_TABLE_STAFF_ID_FIELD}</div>;
       },
     },
     {
       field: "name",
       renderHeader: () => {
-        return <>{translations.EMPLOYEES_TABLE_NAME_FIELD}</>;
+        return <div>{translations.EMPLOYEES_TABLE_NAME_FIELD}</div>;
       },
     },
     {
       field: "joiningDate",
       renderHeader: () => {
-        return <>{translations.EMPLOYEES_TABLE_JOINING_DATE_FIELD}</>;
+        return <div>{translations.EMPLOYEES_TABLE_JOINING_DATE_FIELD}</div>;
       },
     },
     {
       field: "basicSalary",
       renderHeader: () => {
-        return <>{translations.EMPLOYEES_TABLE_BASIC_SALARY_FIELD}</>;
+        return <div>{translations.EMPLOYEES_TABLE_BASIC_SALARY_FIELD}</div>;
       },
     },
     {
       field: "allowances",
       renderHeader: () => {
-        return <>{translations.EMPLOYEES_TABLE_ALLOWANCES_FIELD}</>;
+        return <div>{translations.EMPLOYEES_TABLE_ALLOWANCES_FIELD}</div>;
       },
       render: (data) => {
         const employee = data as Employee;

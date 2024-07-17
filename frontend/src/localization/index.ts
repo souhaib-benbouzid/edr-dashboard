@@ -1,4 +1,4 @@
-export const translations = {
+export const translations: Record<string, string> = {
   EMAIL_VALIDATION_ERROR: "Must be an email",
   REQUIRED_FIELD: "This field is required",
   FULL_NAME_MIN_LENGTH_VALIDATION_ERROR: "too short",
@@ -48,4 +48,16 @@ export const translations = {
     "Easily update, pay and manage employees salaries.",
   SALARIES_TABLE_ADDITIONS_FIELD: "Additions",
   SALARIES_TABLE_DEDUCTIONS_FIELD: "Deductions",
+  ADD_EMPLOYEE: "Add employee",
+  PICK_A_DATE: "Pick a date",
+  HOUSE_RENT: "House Rent",
+  CHILDREN_EDUCATION: "Children Education",
+  CONVENANCE: "Conveyance",
+  HELPER_ASSISTANT: "Helper/Assistant",
+  BOOKS_PERIODICALS: "Books or periodicals",
+  FOOD_COUPONS: "Food coupons",
+  LEAVE_TRAVEL_CONCESSION_ASSISTANCE: "Leave Travel Concession or Assistance",
+  MULTI_SELECT_PLACEHOLDER: "Select options...",
+  ADD_EMPLOYEE_DESCRIPTION:
+    "Add employee information here. Click add when you're done.",
 };

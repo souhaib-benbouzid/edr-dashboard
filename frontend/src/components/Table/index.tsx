@@ -9,6 +9,7 @@ import {
 import { Column, TableData } from "./types";
 import StyledTableHead from "./TableHead";
 import StyledTableBody from "./TableBody";
+import { Table } from "../ui/table";
 
 export type TableProps = {
   id: string;
@@ -32,8 +33,10 @@ const DynamicTable = ({
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <StyledTableHead columns={columns} />
-        <StyledTableBody columns={columns} data={data} />
+        <Table>
+          <StyledTableHead columns={columns} />
+          <StyledTableBody columns={columns} data={data} />
+        </Table>
       </CardContent>
     </Card>
   );

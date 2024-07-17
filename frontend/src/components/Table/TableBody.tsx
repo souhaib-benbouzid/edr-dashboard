@@ -12,8 +12,10 @@ type Props = {
 const StyledTableBody = ({ data, columns }: Props) => {
   if (!data || data.length === 0) {
     return (
-      <TableBody>
-        <TableRow>{translations.TABLE_EMPTY_TABLE}</TableRow>
+      <TableBody className="w-full">
+        <div className="text-center w-full">
+          {translations.TABLE_EMPTY_TABLE}
+        </div>
       </TableBody>
     );
   }
