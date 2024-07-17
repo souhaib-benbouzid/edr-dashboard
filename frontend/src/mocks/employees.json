@@ -5,10 +5,10 @@
     "joiningDate": "1/2/2023",
     "basicSalary": 3976,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "name": "Ange Gosenell",
     "joiningDate": "2/4/2023",
     "basicSalary": 2303,
-    "allowances": ["House Rent", "Children Education", "Food coupons"],
+    "allowances": ["HOUSE_RENT", "CHILDREN_EDUCATION", "FOOD_COUPONS"],
     "endOfService": true
   },
   {
@@ -24,7 +24,7 @@
     "name": "James Ivanin",
     "joiningDate": "5/18/2024",
     "basicSalary": 4850,
-    "allowances": ["House Rent", "Children Education", "Conveyance"],
+    "allowances": ["HOUSE_RENT", "CHILDREN_EDUCATION", "CONVENANCE"],
     "endOfService": true
   },
   {
@@ -33,10 +33,10 @@
     "joiningDate": "3/17/2023",
     "basicSalary": 2689,
     "allowances": [
-      "House Rent",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -44,7 +44,7 @@
     "name": "Sherwynd Growden",
     "joiningDate": "4/13/2023",
     "basicSalary": 4703,
-    "allowances": ["House Rent", "Children Education", "Conveyance"]
+    "allowances": ["HOUSE_RENT", "CHILDREN_EDUCATION", "CONVENANCE"]
   },
   {
     "id": "ef845362-581b-4294-993c-01e66a6c13da",
@@ -52,10 +52,10 @@
     "joiningDate": "2/23/2023",
     "basicSalary": 4527,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -64,10 +64,10 @@
     "joiningDate": "12/14/2022",
     "basicSalary": 4095,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -76,10 +76,10 @@
     "joiningDate": "8/26/2023",
     "basicSalary": 2329,
     "allowances": [
-      "Helper/Assistant",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HELPER_ASSISTANT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -87,7 +87,7 @@
     "name": "Kailey Hanks",
     "joiningDate": "12/28/2023",
     "basicSalary": 2063,
-    "allowances": ["Books or periodicals", "Food coupons"]
+    "allowances": ["BOOKS_PERIODICALS", "FOOD_COUPONS"]
   },
   {
     "id": "10e5534b-a449-4b8a-b4b4-d4f9a2278ae4",
@@ -95,9 +95,9 @@
     "joiningDate": "6/13/2024",
     "basicSalary": 4096,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -106,10 +106,10 @@
     "joiningDate": "4/5/2023",
     "basicSalary": 4240,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Books or periodicals",
-      "Food coupons"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS"
     ],
     "endOfService": true
   },
@@ -119,10 +119,10 @@
     "joiningDate": "1/16/2023",
     "basicSalary": 3803,
     "allowances": [
-      "House Rent",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -132,9 +132,9 @@
     "joiningDate": "3/13/2024",
     "basicSalary": 3028,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -149,7 +149,7 @@
     "name": "Olivier Krysztofiak",
     "joiningDate": "6/29/2023",
     "basicSalary": 4110,
-    "allowances": ["House Rent", "Leave Travel Concession or Assistance"],
+    "allowances": ["HOUSE_RENT", "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"],
     "endOfService": true
   },
   {
@@ -158,10 +158,9 @@
     "joiningDate": "10/16/2023",
     "basicSalary": 2336,
     "allowances": [
-      "House Rent",
-      "Children Education",
-
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -178,13 +177,13 @@
     "joiningDate": "2/24/2024",
     "basicSalary": 4158,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Helper/Assistant",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "HELPER_ASSISTANT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -193,9 +192,9 @@
     "joiningDate": "1/27/2023",
     "basicSalary": 2473,
     "allowances": [
-      "House Rent",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -205,13 +204,13 @@
     "joiningDate": "3/14/2024",
     "basicSalary": 2097,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Helper/Assistant",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "HELPER_ASSISTANT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -221,9 +220,9 @@
     "joiningDate": "6/19/2023",
     "basicSalary": 4238,
     "allowances": [
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -233,10 +232,10 @@
     "joiningDate": "1/22/2023",
     "basicSalary": 3541,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -246,10 +245,10 @@
     "joiningDate": "2/12/2024",
     "basicSalary": 3509,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -258,11 +257,11 @@
     "joiningDate": "5/20/2023",
     "basicSalary": 4842,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -272,10 +271,10 @@
     "joiningDate": "3/27/2024",
     "basicSalary": 2435,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -284,11 +283,11 @@
     "joiningDate": "8/9/2023",
     "basicSalary": 4220,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Helper/Assistant",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "HELPER_ASSISTANT",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -296,7 +295,7 @@
     "name": "Lucais Allabush",
     "joiningDate": "12/17/2022",
     "basicSalary": 3029,
-    "allowances": ["Leave Travel Concession or Assistance"]
+    "allowances": ["LEAVE_TRAVEL_CONCESSION_ASSISTANCE"]
   },
   {
     "id": "bc5f8d7b-c3a2-4710-89ad-b08f25c357ed",
@@ -304,10 +303,10 @@
     "joiningDate": "6/9/2024",
     "basicSalary": 4364,
     "allowances": [
-      "Helper/Assistant",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HELPER_ASSISTANT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   },
@@ -317,13 +316,13 @@
     "joiningDate": "7/16/2023",
     "basicSalary": 3418,
     "allowances": [
-      "House Rent",
-      "Children Education",
-      "Conveyance",
-      "Helper/Assistant",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "CHILDREN_EDUCATION",
+      "CONVENANCE",
+      "HELPER_ASSISTANT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ]
   },
   {
@@ -332,10 +331,10 @@
     "joiningDate": "2/2/2024",
     "basicSalary": 2435,
     "allowances": [
-      "House Rent",
-      "Books or periodicals",
-      "Food coupons",
-      "Leave Travel Concession or Assistance"
+      "HOUSE_RENT",
+      "BOOKS_PERIODICALS",
+      "FOOD_COUPONS",
+      "LEAVE_TRAVEL_CONCESSION_ASSISTANCE"
     ],
     "endOfService": true
   }

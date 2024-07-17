@@ -1,5 +1,5 @@
 import { Form, Formik, FormikHelpers } from "formik";
-import React, { MutableRefObject, RefObject } from "react";
+import React from "react";
 import TextField from "../forms/TextField";
 import { translations } from "@/localization";
 import {
@@ -9,7 +9,6 @@ import {
 } from "@/constants/forms/addEmployeeForm";
 import { DatePickerField } from "../forms/DatePicker";
 import FormControl from "../forms/FormControl";
-import { AlertDialogFooter } from "../ui/alert-dialog";
 import { Button } from "../ui/button";
 import { MultiSelectField } from "../forms/MultiSelectField";
 import { Allowances } from "@/types";
@@ -71,15 +70,14 @@ const AddEmployeeForm = ({ setOpen }: Props) => {
                   label: translations[item],
                   value: item,
                 }))}
-              // options={options}
             />
           </FormControl>
           <DialogFooter>
             <Button variant="outline" onClick={() => setOpen(false)}>
-              Cancel
+              {translations.CANCEL}
             </Button>
             <Button variant="default" type="submit" disabled={isSubmitting}>
-              Add
+              {translations.ADD}
             </Button>
           </DialogFooter>
         </Form>

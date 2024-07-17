@@ -1,10 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { AddEmployeeDialog } from "./Dialog";
 
 const AddEmployee = () => {
-  const [open, setOpen] = useState();
-
   return <AddEmployeeDialog />;
 };
 

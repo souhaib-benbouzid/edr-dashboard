@@ -6,7 +6,7 @@ export type InitialValues = {
   name: string;
   joiningDate: Date | null;
   basicSalary: number | null;
-  allowances: string[];
+  allowances: { label: string; value: string }[];
 };
 
 export const initialValues: InitialValues = {

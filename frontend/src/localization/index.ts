@@ -60,4 +60,15 @@ export const translations: Record<string, string> = {
   MULTI_SELECT_PLACEHOLDER: "Select options...",
   ADD_EMPLOYEE_DESCRIPTION:
     "Add employee information here. Click add when you're done.",
+  CANCEL: "Cancel",
+  CONTINUE: "Continue",
+  DELETE_EMPLOYEE: "Are you sure you want to remove employee?",
+  DELETE_EMPLOYEE_DESCRIPTION:
+    "This action cannot be undone. This will permanently delete employee account.",
+  DELETE: "Delete",
+  EDIT: "Edit",
+  ADD: "Add",
+  EDIT_EMPLOYEE: "Edit Employee",
+  EDIT_EMPLOYEE_DESCRIPTION:
+    "Update employee information here. Click save when you're done.",
 };
