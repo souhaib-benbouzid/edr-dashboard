@@ -1,5 +1,5 @@
 import { Form, Formik, FormikHelpers } from "formik";
-import React from "react";
+import React, { useContext } from "react";
 import TextField from "../forms/TextField";
 import { translations } from "@/localization";
 import {
@@ -13,22 +13,26 @@ import { Button } from "../ui/button";
 import { MultiSelectField } from "../forms/MultiSelectField";
 import { Allowances } from "@/types";
 import { DialogFooter } from "../ui/dialog";
+import { prepareInitialData } from "@/lib/utils";
+import { EmployeeContext, EmployeesContexts } from "@/Providers/employees";
 
 type Props = {
   setOpen: (val: boolean) => void;
 };
 
 const AddEmployeeForm = ({ setOpen }: Props) => {
+  const { addEmployee } = useContext(EmployeesContexts) as EmployeeContext;
+
   const handleSubmit = (
     values: InitialValues,
     helpers: FormikHelpers<InitialValues>
   ) => {
     helpers.setSubmitting(true);
     setTimeout(() => {
-      alert(JSON.stringify(values));
       setOpen(false);
+      addEmployee(prepareInitialData(values));
       helpers.setSubmitting(false);
-    }, 2000);
+    }, 500);
   };
   return (
     <Formik
@@ -49,14 +53,14 @@ const AddEmployeeForm = ({ setOpen }: Props) => {
           <FormControl>
             <TextField
               name="basicSalary"
-              label={translations.EMPLOYEES_TABLE_JOINING_DATE_FIELD}
+              label={translations.EMPLOYEES_TABLE_BASIC_SALARY_FIELD}
               type="number"
               placeholder="$"
             />
           </FormControl>
           <FormControl>
             <DatePickerField
-              label={translations.EMPLOYEES_TABLE_BASIC_SALARY_FIELD}
+              label={translations.EMPLOYEES_TABLE_JOINING_DATE_FIELD}
               name="joiningDate"
             />
           </FormControl>

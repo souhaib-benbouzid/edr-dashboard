@@ -12,20 +12,32 @@ import { translations } from "@/localization";
 import { useState } from "react";
 import EditEmployeeDialogForm from "./Form";
 import { Employee } from "@/types";
+import { Button } from "../ui/button";
 
 type Props = {
   data: Employee;
+  callback?: (open: boolean) => void;
 };
 
-export function EditEmployeeDialog({ data }: Props) {
+export function EditEmployeeDialog({ data, callback }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog
+      open={open}
+      onOpenChange={(open) => {
+        setOpen(open);
+        callback && callback(open);
+      }}
+    >
       <DialogTrigger asChild>
-        <div className="w-full cursor-pointer" onClick={() => setOpen(true)}>
+        <Button
+          variant="outline"
+          className="w-full mb-2"
+          onClick={() => setOpen(true)}
+        >
           {translations.EDIT}
-        </div>
+        </Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
@@ -34,7 +46,13 @@ export function EditEmployeeDialog({ data }: Props) {
             {translations.EDIT_EMPLOYEE_DESCRIPTION}
           </DialogDescription>
         </DialogHeader>
-        <EditEmployeeDialogForm setOpen={setOpen} values={data} />
+        <EditEmployeeDialogForm
+          setOpen={(value: boolean) => {
+            setOpen(value);
+            callback && callback(value);
+          }}
+          data={data}
+        />
       </DialogContent>
     </Dialog>
   );

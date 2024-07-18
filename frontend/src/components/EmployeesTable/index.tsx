@@ -1,15 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import DynamicTable from "@/components/Table";
-import data from "@/mocks/employees.json";
 import { translations } from "@/localization";
 import { useColumns } from "./hooks/useColumns";
-import { Employee } from "@/types";
+import { EmployeeContext, EmployeesContexts } from "@/Providers/employees";
 
 const EmployeesTable = () => {
   const columns = useColumns();
-  const [employees, setEmployees] = useState<Employee[]>([...data]);
+  const { employees } = useContext(EmployeesContexts) as EmployeeContext;
+
   return (
     <DynamicTable
       id="employees-table"

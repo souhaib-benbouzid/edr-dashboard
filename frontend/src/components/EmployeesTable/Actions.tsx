@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Button } from "../ui/button";
 import {
   DropdownMenu,
@@ -12,6 +12,7 @@ import { translations } from "@/localization";
 import { Alert } from "../Alert";
 import { EditEmployeeDialog } from "../EditEmployee/Dialog";
 import { Employee } from "@/types";
+import { EmployeeContext, EmployeesContexts } from "@/Providers/employees";
 
 type Props = {
   data: Employee;
@@ -19,9 +20,7 @@ type Props = {
 
 const Actions = ({ data }: Props) => {
   const [open, setOpen] = useState(false);
-  const handleDelete = () => {
-    console.log(data);
-  };
+  const { deleteEmployee } = useContext(EmployeesContexts) as EmployeeContext;
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
@@ -32,25 +31,17 @@ const Actions = ({ data }: Props) => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuLabel>Actions</DropdownMenuLabel>
-        <DropdownMenuItem
-          onSelect={(e) => {
-            e.preventDefault();
-          }}
-        >
-          <EditEmployeeDialog data={data} />
+        <DropdownMenuLabel className="text-center">Actions</DropdownMenuLabel>
+        <DropdownMenuItem asChild>
+          <EditEmployeeDialog data={data} callback={(open) => setOpen(open)} />
         </DropdownMenuItem>
-        <DropdownMenuItem
-          onSelect={(e) => {
-            e.preventDefault();
-          }}
-        >
+        <DropdownMenuItem asChild>
           <Alert
             title={translations.DELETE_EMPLOYEE}
             description={translations.DELETE_EMPLOYEE_DESCRIPTION}
             successText={translations.DELETE}
             onSuccess={() => {
-              handleDelete();
+              deleteEmployee(data.id);
               setOpen(false);
             }}
             onCancel={() => {
@@ -58,7 +49,9 @@ const Actions = ({ data }: Props) => {
             }}
             trigger={translations.DELETE}
             renderTrigger={() => (
-              <div className="w-full cursor-pointer">{translations.DELETE}</div>
+              <Button variant="destructive" className="w-full">
+                {translations.DELETE}
+              </Button>
             )}
           />
         </DropdownMenuItem>

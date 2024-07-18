@@ -26,8 +26,6 @@ export function LoginForm() {
     formikHelpers: FormikHelpers<InitialValues>
   ) => {
     formikHelpers.setSubmitting(true);
-    console.log(values);
-
     setTimeout(() => {
       formikHelpers.setSubmitting(false);
       router.push(location.dashboardUrl());

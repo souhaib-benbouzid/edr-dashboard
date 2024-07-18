@@ -1,5 +1,5 @@
 import { Form, Formik, FormikHelpers } from "formik";
-import React from "react";
+import React, { useContext } from "react";
 import TextField from "../forms/TextField";
 import { translations } from "@/localization";
 import {
@@ -13,45 +13,38 @@ import { Button } from "../ui/button";
 import { MultiSelectField } from "../forms/MultiSelectField";
 import { Allowances, Employee } from "@/types";
 import { DialogFooter } from "../ui/dialog";
+import { prepareEmployeeData, prepareInitialData } from "@/lib/utils";
+import { EmployeeContext, EmployeesContexts } from "@/Providers/employees";
 
 type Props = {
   setOpen: (val: boolean) => void;
-  values: Employee;
+  data: Employee;
 };
 
-const EditEmployeeForm = ({ setOpen, values }: Props) => {
+const EditEmployeeForm = ({ setOpen, data }: Props) => {
+  const { updateEmployee } = useContext(EmployeesContexts) as EmployeeContext;
+
   const handleSubmit = (
     values: InitialValues,
     helpers: FormikHelpers<InitialValues>
   ) => {
     helpers.setSubmitting(true);
     setTimeout(() => {
-      alert(JSON.stringify(values));
       setOpen(false);
+      updateEmployee(data.id, prepareInitialData(values));
       helpers.setSubmitting(false);
-    }, 2000);
-  };
-
-  const mapEmployee = (employee: Employee): InitialValues => {
-    return {
-      ...employee,
-      allowances: employee.allowances.map((item) => ({
-        label: translations[item],
-        value: item,
-      })),
-    };
+    }, 500);
   };
 
   return (
     <Formik
-      initialValues={mapEmployee(values)}
+      initialValues={prepareEmployeeData(data)}
       validationSchema={validationsSchema}
       onSubmit={handleSubmit}
       enableReinitialize
     >
-      {({ isSubmitting, values }) => (
+      {({ isSubmitting }) => (
         <Form>
-          <div>{JSON.stringify(values, null, 2)}</div>
           <FormControl>
             <TextField
               name="name"

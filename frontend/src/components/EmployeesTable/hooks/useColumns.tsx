@@ -5,7 +5,7 @@ import { translations } from "@/localization";
 import { Badge } from "@/components/ui/badge";
 import { Employee } from "@/types";
 import Actions from "../Actions";
-
+import { format } from "date-fns";
 export const useColumns = (): Column[] => {
   const columns: Column[] = [
     {
@@ -24,6 +24,10 @@ export const useColumns = (): Column[] => {
       field: "joiningDate",
       renderHeader: () => {
         return <div>{translations.EMPLOYEES_TABLE_JOINING_DATE_FIELD}</div>;
+      },
+      render: (data) => {
+        const employee = data as Employee;
+        return <div>{format(employee.joiningDate, "PPP")}</div>;
       },
     },
     {
