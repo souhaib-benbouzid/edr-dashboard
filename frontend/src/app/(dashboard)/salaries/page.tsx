@@ -1,10 +1,10 @@
 "use client";
+import PaymentProcessor from "@/components/PaymentProcessor";
 import SalariesTable from "@/components/SalariesTable";
-import { Button } from "@/components/ui/button";
 import { translations } from "@/localization";
 import { EmployeesProvider } from "@/Providers/employees";
 import SalariesProvider from "@/Providers/salaries";
-import React, { useState } from "react";
+import React from "react";
 
 const Page = () => {
   return (
@@ -16,13 +16,7 @@ const Page = () => {
               {translations.SALARIES_PAGE_TITLE}
             </h2>
             <div className="ml-auto">
-              <Button
-                variant="default"
-                className="w-56 ml-2"
-                onClick={() => alert(true)}
-              >
-                {translations.PAY}
-              </Button>
+              <PaymentProcessor />
             </div>
           </div>
           <SalariesTable />

@@ -1,5 +1,5 @@
 "use client";
-import { Column, TableData } from "@/components/Table/types";
+import { Column } from "@/components/Table/types";
 import { Badge } from "@/components/ui/badge";
 
 import {
@@ -10,10 +10,11 @@ import {
 import { translations } from "@/localization";
 import { Salary, TableFieldType } from "@/types";
 import { format } from "date-fns";
-import { DeductionFormField } from "../DeductionFormField";
+import { DeductionFormField } from "../../forms/DeductionFormField";
 import { SalaryFormFieldNames } from "@/constants/forms/salaryForm";
-import { AdditionsFormField } from "../AdditionsFormField";
-import TotalPayFormField from "../TotalPayFormField";
+import { AdditionsFormField } from "../../forms/AdditionsFormField";
+import TotalPayFormField from "../../forms/TotalPayFormField";
+import { Check } from "lucide-react";
 
 export const useColumns = (): Column[] => {
   const columns: Column[] = [
@@ -164,6 +165,32 @@ export const useColumns = (): Column[] => {
         );
       },
       fieldType: TableFieldType.DATE,
+    },
+    {
+      field: "gratuity",
+      fieldType: TableFieldType.CHECKBOX,
+      renderHeader: () => {
+        return (
+          <div className="w-10">
+            {translations.SALARIES_TABLE_GRATUITY_FIELD}
+          </div>
+        );
+      },
+      render: (data) => {
+        const salary = data as Salary;
+        return (
+          <div className="flex justify-center">
+            {salary.gratuity ? (
+              <>
+                <Check className="h-4 w-4" />
+                <span className="sr-only">gratuity</span>
+              </>
+            ) : (
+              <div></div>
+            )}
+          </div>
+        );
+      },
     },
   ];
 

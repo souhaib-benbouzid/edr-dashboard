@@ -27,6 +27,7 @@ export const salaryValidationSchema = Yup.object({
   deductions: Yup.array().of(deductionValidation),
   total: Yup.number().required(translations.REQUIRED_FIELD),
   payDate: Yup.date().nullable(),
+  gratuity: Yup.boolean().default(false),
 });
 
 export enum SalaryFormFieldNames {
@@ -38,4 +39,5 @@ export enum SalaryFormFieldNames {
   deductions = "deductions",
   total = "total",
   payDate = "payDate",
+  gratuity = "gratuity",
 }

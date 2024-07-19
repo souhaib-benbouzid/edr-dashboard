@@ -36,6 +36,7 @@ export const translations: Record<string, string> = {
   EMPLOYEES_TABLE_ALLOWANCES_FIELD: "Allowances",
   EMPLOYEES_TABLE_ACTIONS_FIELD: "Actions",
   SALARIES_TABLE_STAFF_ID_FIELD: "Staff ID",
+  SALARIES_TABLE_GRATUITY_FIELD: "Gratuity",
   SALARIES_TABLE_NAME_FIELD: "Full Name",
   SALARIES_TABLE_JOINING_DATE_FIELD: "Joining Date",
   SALARIES_TABLE_PAY_DATE_FIELD: "Pay Date",
@@ -86,4 +87,17 @@ export const translations: Record<string, string> = {
   SAVE: "Save",
   EDIT_MODE: "Update Payment Information",
   PAY: "Process Payment",
+  PAYMENT_PROCESS_ALERT_DIALOG_TITLE: "Process Payment",
+  PAYMENT_PROCESS_ALERT_DIALOG_DESCRIPTION:
+    "You must specify the salary month and year for each employee salary processing, Employees without specified month and year details will be excluded from the session",
+  PAYMENT_PROCESS_SUCCESS: "Success, Payment Processed!",
+  PAYMENT_PROCESS_SUCCESS_DESCRIPTION:
+    "you view all payment logs in the dashboard",
+  DASHBOARD_PAGE_TITLE: "Welcome back!",
+  PAYMENT_LOGS_TABLE_TITLE: "Processed Payment",
+  PAYMENT_LOGS_TABLE_DESCRIPTION:
+    "Payment history log, providing details of all past payments made through the portal",
+  PAYMENT_LOGS_TABLE_PROCESSING_DATE_FIELD: "Payment Processing Date",
+  PAYMENT_LOGS_TABLE_ID_FIELD: "Payment ID",
+  EXPORT_LOGS: "Export All",
 };

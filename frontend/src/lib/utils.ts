@@ -1,6 +1,4 @@
 import { InitialValues } from "@/constants/forms/addEmployeeForm";
-import { additions, deductions } from "@/constants/salary-modifiers";
-import { translations } from "@/localization";
 import { AdditionObj, DeductionObj, Employee, Salary } from "@/types";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -55,6 +53,7 @@ export const prepareSalaries = (employees: Employee[]): Salary[] => {
       deductions: [],
       total: employee.basicSalary,
       payDate: null,
+      gratuity: false,
     };
     return salary;
   });

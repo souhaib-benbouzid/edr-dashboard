@@ -23,7 +23,6 @@ const SalariesProvider = ({ children }: Props) => {
 
   const updateSalary: SalaryContext["updateSalary"] = (id, data) => {
     const salaryIndex = salaries.findIndex((item) => item.id === id);
-    alert(JSON.stringify({ id, data }, null, 2));
     if (salaryIndex === -1) {
       throw new Error("salary not found");
     }

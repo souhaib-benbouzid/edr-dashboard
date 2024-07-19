@@ -10,6 +10,7 @@ import { TableFieldType } from "@/types";
 import TableActions from "./TableActions";
 import { X, CheckCircle } from "lucide-react";
 import { Button } from "../ui/button";
+import { CheckboxField } from "../forms/CheckboxField";
 
 type Props = {
   data: TableData;
@@ -42,7 +43,7 @@ const StyledTableRow = ({
       enableReinitialize
       validationSchema={validationSchema}
     >
-      {({ isValid, submitForm }) => {
+      {({ isValid, submitForm, errors, values }) => {
         if (!isEditMode) {
           return (
             <TableRow>
@@ -130,6 +131,14 @@ const StyledTableRow = ({
                   {cell.fieldType === TableFieldType.CUSTOM &&
                     cell.renderFormField &&
                     cell.renderFormField(data)}
+
+                  {cell.fieldType === TableFieldType.CHECKBOX && (
+                    <CheckboxField
+                      label={cell.field}
+                      name={cell.field}
+                      compact
+                    />
+                  )}
                 </TableCell>
               );
             })}

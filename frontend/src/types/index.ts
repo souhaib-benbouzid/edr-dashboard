@@ -43,6 +43,7 @@ export interface Salary extends Employee {
   deductions: DeductionObj[];
   total: number;
   payDate: Date | null;
+  gratuity: boolean;
 }
 
 export enum Deduction {
@@ -67,4 +68,11 @@ export enum TableFieldType {
   NUMBER = "NUMBER",
   CUSTOM = "CUSTOM",
   NONE = "NONE",
+  CHECKBOX = "CHECKBOX",
 }
+
+export type PaymentLog = {
+  id: string;
+  time: Date;
+  salaries: Salary[];
+};
