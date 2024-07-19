@@ -7,7 +7,6 @@ import SalariesProvider from "@/Providers/salaries";
 import React, { useState } from "react";
 
 const Page = () => {
-  const [isEditMode, setIsEditMode] = useState(false);
   return (
     <EmployeesProvider>
       <SalariesProvider>
@@ -17,31 +16,16 @@ const Page = () => {
               {translations.SALARIES_PAGE_TITLE}
             </h2>
             <div className="ml-auto">
-              {isEditMode ? (
-                <>
-                  <Button
-                    className="w-32 ml-2"
-                    variant="destructive"
-                    onClick={() => setIsEditMode(false)}
-                  >
-                    {translations.CANCEL}
-                  </Button>
-                  <Button
-                    variant="default"
-                    className="w-32 ml-2"
-                    onClick={() => setIsEditMode(false)}
-                  >
-                    {translations.SAVE}
-                  </Button>
-                </>
-              ) : (
-                <Button variant="default" onClick={() => setIsEditMode(true)}>
-                  {translations.EDIT_MODE}
-                </Button>
-              )}
+              <Button
+                variant="default"
+                className="w-56 ml-2"
+                onClick={() => alert(true)}
+              >
+                {translations.PAY}
+              </Button>
             </div>
           </div>
-          <SalariesTable isEditMode={isEditMode} />
+          <SalariesTable />
         </div>
       </SalariesProvider>
     </EmployeesProvider>

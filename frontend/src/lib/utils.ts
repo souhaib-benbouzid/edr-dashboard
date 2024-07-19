@@ -16,10 +16,6 @@ export function titlize(text: string): string {
 export const prepareEmployeeData = (employee: Employee): InitialValues => {
   const data = {
     ...employee,
-    allowances: employee.allowances.map((item) => ({
-      label: translations[item],
-      value: item,
-    })),
   };
   return data;
 };
@@ -27,7 +23,6 @@ export const prepareEmployeeData = (employee: Employee): InitialValues => {
 export const prepareInitialData = (values: InitialValues): Employee => {
   const data = {
     ...values,
-    allowances: values.allowances.map((item) => item.value),
   } as Employee;
   return data;
 };
@@ -56,8 +51,8 @@ export const prepareSalaries = (employees: Employee[]): Salary[] => {
   const arr: Salary[] = employees.map((employee) => {
     const salary: Salary = {
       ...employee,
-      additions: [...additions.slice(1, (Math.random() * 6) % 6)],
-      deductions: [...deductions.slice(1, (Math.random() * 6) % 6)],
+      additions: [],
+      deductions: [],
       total: employee.basicSalary,
       payDate: null,
     };

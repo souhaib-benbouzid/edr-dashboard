@@ -66,8 +66,6 @@ export function MultiSelect({
     },
     [onChange, values]
   );
-  console.log(options);
-  console.log(values);
 
   const selectables = options.filter(
     (option) => !values.some((item) => item.value === option.value)
@@ -77,7 +75,7 @@ export function MultiSelect({
       {!compact && <Label>{label}</Label>}
       <Command
         onKeyDown={handleKeyDown}
-        className="overflow-visible bg-transparent my-1"
+        className="overflow-visible bg-transparent"
       >
         <div className="group rounded-md border border-input px-3 py-2 text-sm ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
           <div className="flex flex-wrap gap-1">
@@ -124,7 +122,7 @@ export function MultiSelect({
           <CommandList>
             {open && selectables.length > 0 ? (
               <div className="absolute top-0 z-10 w-full rounded-md border bg-popover text-popover-foreground shadow-md outline-none animate-in">
-                <CommandGroup className="h-full overflow-auto">
+                <CommandGroup className="overflow-auto">
                   {selectables.map((option) => (
                     <CommandItem
                       key={option.value}

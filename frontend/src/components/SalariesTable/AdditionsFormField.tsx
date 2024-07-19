@@ -1,12 +1,12 @@
 "use client";
 
 import { MultiSelect } from "@/components/ui/extension/multi-select";
+import { InitialValues } from "@/constants/forms/addEmployeeForm";
+import { SalaryFormFieldNames } from "@/constants/forms/salaryForm";
+import { calculateTotalSalary } from "@/lib/utils";
+import { DeductionObj, Salary } from "@/types";
 import { useField, useFormikContext } from "formik";
 import * as React from "react";
-
-type ErrorObject = {
-  value: string;
-};
 
 export type SelectOption = {
   value: string;
@@ -19,10 +19,15 @@ export type Props = {
   label: string;
   name: string;
 };
-export function MultiSelectField({ options, label, name, compact }: Props) {
+export function AdditionsFormField({ options, label, name, compact }: Props) {
   const [field, meta, helpers] = useField(name);
-  const handleChange = (value: SelectOption[]) => {
+  const { setFieldValue, values } = useFormikContext<Salary>();
+  const handleChange = (value: any[]) => {
     helpers.setValue(value, true);
+    setFieldValue(
+      SalaryFormFieldNames.total,
+      calculateTotalSalary(values.basicSalary, value, values.deductions)
+    );
   };
 
   return (

@@ -1,15 +1,29 @@
+"use client";
 import React from "react";
 
-import { TableBody, TableCell, TableRow } from "../ui/table";
+import { TableBody } from "../ui/table";
 import { Column, TableData } from "./types";
 import { translations } from "@/localization";
+import { ObjectSchema } from "yup";
+
+import StyledTableRow from "./TableRow";
 
 type Props = {
   data: TableData[];
   columns: Column[];
+  isEditMode?: boolean;
+  validationSchema?: ObjectSchema<any>;
+  onEdit: (data: TableData) => void;
+  showActions?: boolean;
 };
 
-const StyledTableBody = ({ data, columns }: Props) => {
+const StyledTableBody = ({
+  data,
+  columns,
+  validationSchema,
+  onEdit,
+  showActions,
+}: Props) => {
   if (!data || data.length === 0) {
     return (
       <TableBody className="w-full">
@@ -22,21 +36,15 @@ const StyledTableBody = ({ data, columns }: Props) => {
 
   return (
     <TableBody>
-      {data.map((row) => (
-        <TableRow key={row.id}>
-          {columns.map((cell, index) => (
-            <TableCell
-              key={row.id + "-" + index}
-              className={`
-                ${cell.width && `w-[${cell.width}]`}
-                ${cell.hideOnMobile && "hidden sm:table-cell"}
-                ${cell.hideOnTablet && "hidden lg:table-cell"}
-                `}
-            >
-              {cell.render ? cell.render(row) : row[cell.field]}
-            </TableCell>
-          ))}
-        </TableRow>
+      {data.map((row, key) => (
+        <StyledTableRow
+          key={row.id + "-row-" + key}
+          columns={columns}
+          data={row}
+          onEdit={onEdit}
+          showActions={showActions}
+          validationSchema={validationSchema}
+        />
       ))}
     </TableBody>
   );

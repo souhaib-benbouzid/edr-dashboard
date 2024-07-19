@@ -10,11 +10,12 @@ import {
 import { DatePickerField } from "../forms/DatePicker";
 import FormControl from "../forms/FormControl";
 import { Button } from "../ui/button";
-import { MultiSelectField } from "../forms/MultiSelectField";
+import { MultiSelectField, SelectOption } from "../forms/MultiSelectField";
 import { Allowances } from "@/types";
 import { DialogFooter } from "../ui/dialog";
 import { prepareInitialData } from "@/lib/utils";
 import { EmployeeContext, EmployeesContexts } from "@/Providers/employees";
+import { allowances } from "@/constants/salary-modifiers";
 
 type Props = {
   setOpen: (val: boolean) => void;
@@ -68,12 +69,7 @@ const AddEmployeeForm = ({ setOpen }: Props) => {
             <MultiSelectField
               name="allowances"
               label={translations.EMPLOYEES_TABLE_ALLOWANCES_FIELD}
-              options={Object.keys(Allowances)
-                .filter((key) => isNaN(Number(key)))
-                .map((item) => ({
-                  label: translations[item],
-                  value: item,
-                }))}
+              options={allowances}
             />
           </FormControl>
           <DialogFooter>
