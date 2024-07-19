@@ -45,8 +45,8 @@ const PaymentLogsTable = () => {
       </div>
       <DynamicTable
         id="payment-logs-table"
-        title={translations.SALARIES_TABLE_TITLE}
-        description={translations.SALARIES_TABLE_DESCRIPTION}
+        title={translations.PAYMENT_LOGS_TABLE_TITLE}
+        description={translations.PAYMENT_LOGS_TABLE_DESCRIPTION}
         data={paymentLogs}
         columns={columns}
         onEdit={() => {}}
