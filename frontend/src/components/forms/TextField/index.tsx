@@ -4,6 +4,7 @@ import { useField } from "formik";
 import React from "react";
 
 type Props = {
+  compact?: boolean;
   name: string;
   label: string;
   type: string;
@@ -11,12 +12,12 @@ type Props = {
   required?: boolean;
 };
 
-const TextField = ({ label, name, ...props }: Props) => {
+const TextField = ({ label, name, compact, ...props }: Props) => {
   const [field, meta, helpers] = useField(name);
 
   return (
     <div>
-      <Label htmlFor={name}>{label}</Label>
+      {!compact && <Label htmlFor={name}>{label}</Label>}
       <Input className="my-2" id={name} {...field} {...props} />
       {meta.touched && meta.error ? (
         <div className="text-sm font-medium text-destructive ">

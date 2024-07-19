@@ -4,19 +4,19 @@ import { MultiSelect } from "@/components/ui/extension/multi-select";
 import { useField, useFormikContext } from "formik";
 import * as React from "react";
 
-type SelectOption = {
+export type SelectOption = {
   value: string;
   label: string;
 };
 
-type Props = {
+export type Props = {
+  compact?: boolean;
   options: SelectOption[];
   label: string;
   name: string;
 };
-export function MultiSelectField({ options, label, name }: Props) {
+export function MultiSelectField({ options, label, name, compact }: Props) {
   const [field, meta, helpers] = useField(name);
-  const { setFieldValue } = useFormikContext();
   const handleChange = (value: SelectOption[]) => {
     helpers.setValue(value, true);
   };
@@ -24,7 +24,8 @@ export function MultiSelectField({ options, label, name }: Props) {
   return (
     <>
       <MultiSelect
-        value={field.value}
+        compact={compact}
+        values={field.value}
         name={field.name}
         onBlur={field.onBlur}
         onChange={handleChange}

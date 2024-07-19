@@ -25,7 +25,8 @@ type Props = {
   onChange: (values: SelectOption[]) => void;
   onBlur: React.FocusEventHandler<HTMLInputElement>;
   name: string;
-  value: SelectOption[];
+  values: SelectOption[];
+  compact?: boolean;
 };
 export function MultiSelect({
   options,
@@ -33,16 +34,17 @@ export function MultiSelect({
   onChange,
   onBlur,
   name,
-  value,
+  values,
+  compact,
 }: Props) {
   const inputRef = React.useRef<HTMLInputElement>(null);
   const [open, setOpen] = React.useState(false);
   const [inputValue, setInputValue] = React.useState("");
   const handleUnselect = React.useCallback(
     (option: SelectOption) => {
-      onChange(value.filter((s) => s.value !== option.value));
+      onChange(values.filter((s) => s.value !== option.value));
     },
-    [onChange, value]
+    [onChange, values]
   );
 
   const handleKeyDown = React.useCallback(
@@ -51,7 +53,7 @@ export function MultiSelect({
       if (input) {
         if (e.key === "Delete" || e.key === "Backspace") {
           if (input.value === "") {
-            const newSelected = [...value];
+            const newSelected = [...values];
             newSelected.pop();
             onChange(newSelected);
           }
@@ -62,22 +64,24 @@ export function MultiSelect({
         }
       }
     },
-    [onChange, value]
+    [onChange, values]
   );
+  console.log(options);
+  console.log(values);
 
   const selectables = options.filter(
-    (option) => !value.some((item) => item.value === option.value)
+    (option) => !values.some((item) => item.value === option.value)
   );
   return (
     <>
-      <Label>{label}</Label>
+      {!compact && <Label>{label}</Label>}
       <Command
         onKeyDown={handleKeyDown}
         className="overflow-visible bg-transparent my-1"
       >
         <div className="group rounded-md border border-input px-3 py-2 text-sm ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
           <div className="flex flex-wrap gap-1">
-            {value.map((option) => {
+            {values.map((option) => {
               return (
                 <Badge key={option.value} variant="secondary">
                   {option.label}
@@ -130,7 +134,7 @@ export function MultiSelect({
                       }}
                       onSelect={() => {
                         setInputValue("");
-                        onChange([...value, option]);
+                        onChange([...values, option]);
                       }}
                       className={"cursor-pointer"}
                     >

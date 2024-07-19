@@ -17,11 +17,12 @@ import { translations } from "@/localization";
 import { useField, useFormikContext } from "formik";
 
 interface Props {
+  compact?: boolean;
   name: string;
   label: string;
 }
 
-export function DatePickerField({ label, name }: Props) {
+export function DatePickerField({ label, name, compact }: Props) {
   const { setFieldValue } = useFormikContext();
   const [field, meta] = useField(name);
 
@@ -29,7 +30,7 @@ export function DatePickerField({ label, name }: Props) {
     <Popover>
       <PopoverTrigger asChild>
         <div className="flex flex-col space-y-2">
-          <Label htmlFor={name}>{label}</Label>
+          {!compact && <Label htmlFor={name}>{label}</Label>}
           <Button
             variant={"outline"}
             type="button"
