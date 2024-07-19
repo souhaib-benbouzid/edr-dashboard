@@ -1,12 +1,10 @@
 import { v4 } from "uuid";
 import chance from "chance";
-import { Allowances, Employee } from "@/types";
+import { Employee } from "@/types";
+import { allowances } from "@/constants/salary-modifiers";
 
 export const createNEmployees = (n: number): Employee[] => {
   const arr: Employee[] = [];
-  const allowances = Object.values(Allowances).filter((val) =>
-    isNaN(Number(val))
-  ) as string[];
 
   for (let index = 0; index < n; index++) {
     arr.push({
